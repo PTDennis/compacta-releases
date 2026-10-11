@@ -1,0 +1,14 @@
+{
+  "formato": 1,
+  "descricao": "Notas das versões do 7-Zip em português de Portugal, mantidas pela Compacta. Assinado com a chave das atualizações.",
+  "notas": {
+    "26.04": "- Correções de erros e de vulnerabilidades de segurança.",
+    "26.03": "- Melhor suporte para imagens ISO com nomes longos (Joliet) e para ficheiros «Compound» (documentos antigos do Office e instaladores MSI).\n- Correções de erros e de vulnerabilidades de segurança.\n- **CVE-2026-58052:** o 7-Zip podia perder a marca de «descarregado da Internet» ao extrair um arquivo preparado para isso. É uma falha do Windows; no Mac, a Compacta aplica a sua própria marca de quarentena aos ficheiros extraídos.",
+    "26.02": "- Correções de erros e de vulnerabilidades de segurança.\n- **CVE-2026-14266 (grave):** um ficheiro XZ preparado para isso podia provocar um erro de memória e executar código ao ser descomprimido. Recomenda-se atualizar.",
+    "26.01": "- Na versão para Linux, a compressão 7z/XZ pode ficar cerca de 10 % mais rápida (páginas de memória grandes). Não afeta o Mac.\n- Nova opção de linha de comandos `-spo` para escolher como é formado o nome da pasta de destino ao extrair. Não muda nada na Compacta, que decide sempre o destino por si.\n- Correções de erros.\n- **Oito vulnerabilidades corrigidas** (CVE-2026-48092, 48095, 48101, 48102, 48103, 48104, 48111 e 48112): leituras e escritas de memória fora dos limites ao abrir arquivos preparados nos formatos SquashFS, NTFS, UEFI, UDF, WIM e Ar. Podiam revelar memória ou fazer o programa terminar.",
+    "26.00": "- Código melhorado para ZIP, CPIO, RAR, UFD, QCOW e Compound.\n- Corrigido: arquivos TAR com ficheiros esparsos (com zonas vazias) não eram extraídos corretamente.\n- Melhorias no gestor de ficheiros do 7-Zip para Windows (ordenação e teste de desempenho), sem efeito na Compacta.\n- Correções de erros.",
+    "25.01": "- **Ligações simbólicas mais seguras:** o tratamento das ligações ao extrair foi alterado para impedir que um arquivo escreva fora da pasta de destino. A Compacta já tinha esta proteção do seu lado.",
+    "25.00": "- Compressão BZIP2 15 a 40 % mais rápida e DEFLATE (ZIP/GZ) 1 a 3 % mais rápida.\n- Melhor suporte para arquivos ZIP, CPIO e FAT.\n- No Windows, pode usar mais de 64 núcleos.\n- Correções de erros e de vulnerabilidades de segurança.",
+    "24.09": "- Dicionários maiores por omissão na compressão 7z/XZ (LZMA/LZMA2): arquivos um pouco mais pequenos, com mais memória usada. No nível Normal passa de 16 MB para 32 MB.\n- Novos tipos de verificação: SHA-512, SHA-384, SHA3-256 e MD5.\n- Melhor suporte para discos com partições APM e HFS (imagens de disco do Mac).\n- Correções de erros."
+  }
+}
